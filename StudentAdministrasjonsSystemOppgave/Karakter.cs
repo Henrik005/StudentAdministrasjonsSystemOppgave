@@ -16,15 +16,17 @@ namespace StudentAdministrasjonsSystemOppgave
 
         public Karakter(Fag subject, Student student, double grade)
         {
-            Subject = subject;
-            Student = student;
-            Grade = grade;
+             Subject = subject;
+             Student = student;
+             Grade = grade;
         }
         public void PrintInfo()
         {
-            Console.WriteLine($"{Subject}");
-            Console.WriteLine($"{Student}");
-            Console.WriteLine($"{Grade}");
+            Console.WriteLine("---------------");
+            Console.WriteLine("GRADE:");
+            Console.WriteLine($"Subject: {Subject.FagNavn}");
+            Console.WriteLine($"Student graded: {Student.Name}");
+            Console.WriteLine($"Score: {Grade}");
         }
     }
 }

@@ -19,9 +19,11 @@ namespace StudentAdministrasjonsSystemOppgave
         }
         public void PrintInfo()
         {
-            Console.WriteLine($"{FagKode}");
-            Console.WriteLine($"{FagNavn}");
-            Console.WriteLine($"{StudiePoeng}");
+            Console.WriteLine("---------------");
+            Console.WriteLine("FAG:");
+            Console.WriteLine($"Subject Code: {FagKode}");
+            Console.WriteLine($"Subject Name: {FagNavn}");
+            Console.WriteLine($"Study Points: {StudiePoeng}");
 
         }
     }
