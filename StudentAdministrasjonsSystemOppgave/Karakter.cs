@@ -25,7 +25,7 @@ namespace StudentAdministrasjonsSystemOppgave
             Console.WriteLine("---------------");
             Console.WriteLine("GRADE:");
             Console.WriteLine($"Subject: {Subject.FagNavn}");
-            Console.WriteLine($"Student graded: {Student.Name}");
+            Console.WriteLine($"Student graded: {Student._name}");
             Console.WriteLine($"Score: {Grade}");
         }
     }
