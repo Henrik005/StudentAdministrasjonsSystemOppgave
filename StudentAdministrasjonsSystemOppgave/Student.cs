@@ -13,7 +13,7 @@ namespace StudentAdministrasjonsSystemOppgave
         public string _studieProgram { get; private set; }
         public int _studentId { get; private set; }
         public List<Fag> _fag { get; private set; }
-        public List<Karakter> _grade { get; private set; } = new List<Karakter>();
+        public List<Karakter> _grade { get;  set; } = new List<Karakter>();
 
 
         public Student(string name, int age, string studieProgram, int studentId, List<Fag> fag)
@@ -43,9 +43,18 @@ namespace StudentAdministrasjonsSystemOppgave
             Console.WriteLine("STUDY SUBJECT:");
             foreach (Fag fag in _fag) { Console.WriteLine($"{fag.FagNavn}"); };
         }
-      private void PrintGrades()
+        private void PrintGrades()
         {
             Console.WriteLine($"GRADES:");
+            foreach (Karakter grade in _grade) { Console.WriteLine($"{grade.Grade}"); }
+
+        }
+        private void AverageGrades()
+        {
+
+        }
+        private void TotalStudyPoints()
+        {
 
         }
 

@@ -43,9 +43,7 @@ namespace StudentAdministrasjonsSystemOppgave
 
         public void AddGrade()
         {
-            {   //Got some help from the team after stumbling around trying to do something akin to this but in the completely wrong way-
-                //But i am still trying to fully understand how i wanna use this as i find myself getting a little bit confused by everything now-
-                //But! It's a nice push in the right direction.
+            {   
                 foreach (Karakter grade in karakters)
                 {
                     if (grade.Student == students[0])
